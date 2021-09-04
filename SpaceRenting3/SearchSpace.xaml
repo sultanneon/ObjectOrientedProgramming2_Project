@@ -1,0 +1,24 @@
+﻿<Window x:Class="SpaceRenting.SearchSpace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceRenting"
+        mc:Ignorable="d"
+        Title="SearchSpace" Height="550" Width="800">
+    <Grid Background="BurlyWood">
+        <Label Content="Search Space " FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Margin="287,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Location" FontSize="30" HorizontalAlignment="Left" Margin="25,109,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="uLocation" FontSize="25" Height="50" Margin="182,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="" Name="locationErr" FontSize="25" Foreground="Red" HorizontalAlignment="Left" Margin="445,114,0,0" VerticalAlignment="Top" Height="39" Width="191"/>
+        <Label Content="Space Type" FontSize="30" HorizontalAlignment="Left" Margin="21,176,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cmbSpaceType" HorizontalAlignment="Left" Height="50" Margin="182,187,0,0" VerticalAlignment="Top" Width="258">
+            
+        </ComboBox>
+
+        <Button Content="Search" FontSize="30" Click="Search_Space" HorizontalAlignment="Left" Height="50" Margin="182,259,0,0" VerticalAlignment="Top" Width="258"/>
+        <Button Content="Previous Page" FontSize="25" HorizontalAlignment="Left" Margin="181,332,0,0" VerticalAlignment="Top" Click="Button_Previous_Page" Height="50" Width="258"/>
+        <Button Content="Logout" Height="50" FontSize="25" HorizontalAlignment="Left" Margin="185,408,0,0" VerticalAlignment="Top" Click="Button_Logout" Width="258"/>
+        <Label Content="" x:Name="spaceTypeErr" FontSize="25" Foreground="Red" HorizontalAlignment="Left" Margin="445,194,0,0" VerticalAlignment="Top" Height="39" Width="191"/>
+    </Grid>
+</Window>

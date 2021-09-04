@@ -1,0 +1,33 @@
+﻿<Window x:Class="SpaceRenting.AddSpace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceRenting"
+        mc:Ignorable="d"
+        Title="AddSpace" Height="550" Width="800">
+    <Grid Background="BurlyWood">
+        <Label Content="Add Space" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Margin="220,4,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter your username and info of the space-" FontSize="25" HorizontalAlignment="Left" Margin="18,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Username" FontSize="30" HorizontalAlignment="Left" Margin="17,84,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left"  Name="txtUsername" FontSize="25" Height="50" Margin="228,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="" FontSize="17" Name="uNameErr" Foreground="Red" HorizontalAlignment="Left" Margin="488,92,0,0" VerticalAlignment="Top" Height="50" Width="300"/>
+        <Label Content="Location" FontSize="30" HorizontalAlignment="Left" Margin="15,147,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="txtLocation" FontSize="25" Height="50" Margin="228,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="" FontSize="17" Name="locationErr" Foreground="Red" HorizontalAlignment="Left" Margin="488,153,0,0" VerticalAlignment="Top" Height="51" Width="300"/>
+        <Label Content="Phone Number" FontSize="30" HorizontalAlignment="Left" Margin="15,217,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="txtPhoneNumber" FontSize="25" Height="50" Margin="226,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="" FontSize="17" Name="phNumErr" Foreground="Red" HorizontalAlignment="Left" Margin="485,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.32,0.489" Height="50" Width="300"/>
+        <Label Content="Cost" FontSize="30" HorizontalAlignment="Left" Margin="17,281,0,0" VerticalAlignment="Top" Height="54" Width="190"/>
+        <TextBox HorizontalAlignment="Left" Name="txtCost" FontSize="25" Height="50" Margin="228,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="" FontSize="17" Name="costErr" Foreground="Red" HorizontalAlignment="Left" Margin="485,287,0,0" VerticalAlignment="Top" Height="45" Width="300"/>
+        <Button Content="Insert Space" Click="Button_Insert_Space" HorizontalAlignment="Left" FontSize="25" Height="50" Margin="36,436,0,0" VerticalAlignment="Top" Width="220"/>
+        <Button Content="Previous Page" FontSize="25" HorizontalAlignment="Left" Margin="293,436,0,0" VerticalAlignment="Top" Click="Button_Previous_Page" Height="50" Width="220"/>
+        <Button Content="Logout" Height="50" FontSize="25" HorizontalAlignment="Left" Margin="553,436,0,0" VerticalAlignment="Top" Click="Button_Logout" Width="220"/>
+        <ComboBox Name="cmbSpaceType" HorizontalAlignment="Left" Height="50" Margin="230,351,0,0" VerticalAlignment="Top" Width="258">
+            
+        </ComboBox>
+        <Label Content="Space Type" FontSize="30" HorizontalAlignment="Left" Margin="17,350,0,0" VerticalAlignment="Top" Height="54" Width="190"/>
+        <Label Content="" FontSize="17" x:Name="spaceTypeErr" Foreground="Red" HorizontalAlignment="Left" Margin="488,353,0,0" VerticalAlignment="Top" Height="45" Width="300"/>
+    </Grid>
+</Window>

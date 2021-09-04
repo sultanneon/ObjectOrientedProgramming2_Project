@@ -1,0 +1,23 @@
+﻿<Window x:Class="SpaceRenting.AdminLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceRenting"
+        mc:Ignorable="d"
+        Title="AdminLogin" Height="550" Width="800">
+    <Grid Background="BurlyWood">
+        <Label Content="Username" FontSize="30" HorizontalAlignment="Left" Margin="46,131,0,0" VerticalAlignment="Top" Height="43" Width="153"/>
+        <Image HorizontalAlignment="Left" Source="C:\Users\TOSHIBA\Downloads\New folder\p.png" Height="100" Margin="260,16,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Name="uName" FontSize="25" Height="50" Margin="194,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" RenderTransformOrigin="0.255,0.395"/>
+        <Label Content="" FontSize="25" Name="uErr" Foreground="Red" HorizontalAlignment="Left" Margin="456,133,0,0" VerticalAlignment="Top" Height="45" Width="326"/>
+        <Label Content="Password" FontSize="30" HorizontalAlignment="Left" Margin="46,204,0,0" VerticalAlignment="Top"/>
+
+        <Button Content="Sign in" FontSize="25" HorizontalAlignment="Left" Margin="193,282,0,0" VerticalAlignment="Top" Click="Button_Login" Width="258" Height="50"/>
+       
+       
+        <Label Content="" Name="pErr" FontSize="25" Foreground="Red" HorizontalAlignment="Left" Margin="457,208,0,0" VerticalAlignment="Top" Height="50" Width="335"/>
+        <PasswordBox HorizontalAlignment="Left" Name="uPass" Height="50" Width="258" Margin="195,204,0,0" VerticalAlignment="Top"/>
+        <Button Content="Previous Page" FontSize="25" HorizontalAlignment="Left" Margin="196,358,0,0" VerticalAlignment="Top" Click="Button_Previous_Page" Height="50" Width="245"/>
+    </Grid>
+</Window>

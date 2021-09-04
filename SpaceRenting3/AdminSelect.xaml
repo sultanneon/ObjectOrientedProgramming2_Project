@@ -1,0 +1,20 @@
+﻿<Window x:Class="SpaceRenting.AdminSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceRenting"
+        mc:Ignorable="d"
+        Title="AdminSelect" Height="550" Width="800">
+    <Grid Background="BurlyWood">
+        <Label Content="ADMIN" FontSize="30"  FontWeight="Bold" Height="60" HorizontalAlignment="Left" Margin="334,50,0,0" VerticalAlignment="Top" Width="115"/>
+        <Button Content="Search User"  Click="Button_Search_User" FontSize="25" Height="50" HorizontalAlignment="Left" Margin="8,120,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="All User"  Click="Button_All_User" FontSize="25" HorizontalAlignment="Left" Margin="270,120,0,0" VerticalAlignment="Top" Width="245" Height="50"/>
+        <Button Content="Remove User" Click="Button_Remove_User" Height="50" FontSize="25" HorizontalAlignment="Left" Margin="534,123,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="Search Space" Click="Button_Search_Space" Height="50" FontSize="25" HorizontalAlignment="Left" Margin="11,214,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="All Space" Click="Button_All_Space" Height="50" FontSize="25" HorizontalAlignment="Left" Margin="274,212,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="Remove Space" Click="Button_Remove_Space" Height="50" FontSize="25" HorizontalAlignment="Left" Margin="533,215,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="Logout" Height="50" Click="Button_Logout" FontSize="25" HorizontalAlignment="Left" Margin="274,402,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="Previous Page" FontSize="25" HorizontalAlignment="Left" Margin="270,316,0,0" VerticalAlignment="Top" Click="Button_Previous_Page" Height="50" Width="245"/>
+    </Grid>
+</Window>
